@@ -2,8 +2,8 @@ import { SERVICES_CONTENT } from "@/constants";
 
 const Services = () => {
   return (
-    <div className="max-w-7xl mx-auto py-12 lg:py-20">
-      <h6 className="text-center uppercase font-semibold mb-10 text-lg lg:text-3xl lg:font-medium lg:mb-20 ">
+    <div className="max-w-7xl mx-auto py-12 lg:py-20 border-b-2">
+      <h6 className="text-center uppercase font-medium mb-10 text-lg lg:text-3xl lg:font-medium lg:mb-20 ">
         our home renovation services
       </h6>
       {SERVICES_CONTENT.map((service, index) => {
