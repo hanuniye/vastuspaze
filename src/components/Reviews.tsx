@@ -1,4 +1,5 @@
 import { REVIEWS } from "@/constants";
+import Image from "next/image";
 
 const Reviews = () => {
   return (
@@ -14,9 +15,9 @@ const Reviews = () => {
               key={index}
               className="p-8 rounded-2xl border flex flex-col justify-between border-neutral-300"
             >
-              <p className="tracking-wide">{review.review}</p>
+              <p className="tracking-wide text-neutral-500">{review.review}</p>
               <div className="flex items-center justify-center mt-7">
-                <img
+                <Image
                   src={review.image.src}
                   className="w-[50px] h-[50px] rounded-full mr-4"
                   alt={`review_img_${index}`}

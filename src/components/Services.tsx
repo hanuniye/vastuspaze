@@ -1,4 +1,5 @@
 import { SERVICES_CONTENT } from "@/constants";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -8,9 +9,9 @@ const Services = () => {
       </h6>
       {SERVICES_CONTENT.map((service, index) => {
         return (
-          <div className="flex flex-col space-y-6 mx-4 md:flex-row md:space-y-0 md:items-start mb-10">
+          <div key={index} className="flex flex-col space-y-6 mx-4 md:flex-row md:space-y-0 md:items-start mb-10">
             <div className={`md:w-1/2 ${index % 2 !== 0 && "md:order-2"}`}>
-              <img
+              <Image
                 src={service.image.src}
                 className="h-auto w-full object-cover rounded-lg"
                 alt=""
