@@ -16,9 +16,8 @@ import user3 from "@/assets/user3.webp";
 import user4 from "@/assets/user4.webp";
 import user5 from "@/assets/user5.webp";
 import user6 from "@/assets/user6.webp";
-import { Mail, MapPin, Phone } from "lucide-react";
 
-export const LINKS: { name: string; link: string }[] = [
+export const LINKS = [
   {
     name: "Services",
     link: "#services",
@@ -41,7 +40,7 @@ export const LINKS: { name: string; link: string }[] = [
   },
 ];
 
-export const HERO_CONTENT: { title: string; subtitle: string; image: any } = {
+export const HERO_CONTENT = {
   title: "VastuSpaze",
   subtitle: "Reimagine Your Space with Expert Renovation Services",
   image: hero,

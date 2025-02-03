@@ -1,5 +1,6 @@
 import { HERO_CONTENT } from "@/constants";
 import hero from "@/assets/hero.webp";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
         <p className="font-medium mb-4 tracking-tighter text-center text-base md:text-lg ">
           {HERO_CONTENT.subtitle}
         </p>
-        <img
+        <Image
           src={hero.src}
           className="w-full h-[65vh] object-cover rounded-2xl p-2"
           alt="hero_img"

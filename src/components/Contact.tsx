@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="flex flex-col space-y-4 mx-10 md:mx-4 md:flex-row md:justify-between md:items-start md:space-y-0">
         {CONTACT_INFO.contact.map((contact, index) => {
           return (
-            <div className="flex items-start">
+            <div key={index} className="flex items-start">
               {contact.label === "Email" ? (
                 <Mail className="text-sm" />
               ) : contact.label === "Phone" ? (

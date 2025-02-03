@@ -5,6 +5,7 @@ import { useState } from "react";
 import logo from "@/assets/logo.webp";
 import { Menu, X } from "lucide-react";
 import { LINKS } from "@/constants";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-7xl mx-auto h-[90px]">
         {/* logo  */}
         <div className="pl-2">
-          <img src={logo.src} width={150} height={15} alt="Vastu Spaze Logo" />
+          <Image src={logo.src} width={150} height={15} alt="Vastu Spaze Logo" />
         </div>
 
         {/* hamburger */}
